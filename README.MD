@@ -3,6 +3,7 @@ HACIERNDO USO DE LAS ETIQUETAS  ESTUDIADEAS EN CLASE CREAR LA PORTADA PRINCIPAL 
 - NOMBRE
 - DESCRIPCION
 -  
+<<<<<<< HEAD
 
 ## 📚 ¿Qué es una LIBRERÍA?
 Una librería es un conjunto de funciones o herramientas que tú puedes usar cuando las necesites en tu código.
@@ -46,3 +47,5 @@ Control	Lo tienes tú	Lo tiene el framework
 Estructura obligatoria	No	Sí
 ¿Quién llama a quién?	Tú llamas a la librería	El framework llama a tu código
 Ejemplos comunes	Lodash, Axios, NumPy, Pandas	Angular, Laravel, Django, Flutter
+=======
+>>>>>>> dd1630415755e0fa3142fac3f19dbc786d575e26
