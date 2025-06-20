@@ -4,8 +4,94 @@
   <meta charset="UTF-8">
   <title>Proyectos - Ronny</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .proyectos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      color: #444;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
   <nav>
     <h1>Ronny</h1>
     <ul>
@@ -16,13 +102,37 @@
     </ul>
   </nav>
 
-  <main class="card">
+  <main>
     <h2>Mis Proyectos</h2>
-    <ul>
-      <li><strong>Mi Portafolio Web:</strong> Sitio web personal hecho con HTML, CSS y JavaScript.</li>
-      <li><strong>App de Recetas:</strong> Aplicación donde puedes ingresar ingredientes y ver recetas.</li>
-      <li><strong>Juego en JavaScript:</strong> Un juego simple hecho con lógica y eventos en JS.</li>
-    </ul>
+    <div class="proyectos-container">
+      <div class="card">
+        <img src="assets/portafolio.jpg" alt="Portafolio Web">
+        <div class="card-content">
+          <h3>Portafolio Web</h3>
+          <p>Página donde muestro mi perfil, pasatiempos y más.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/recetas.jpg" alt="App de Recetas">
+        <div class="card-content">
+          <h3>App de Recetas</h3>
+          <p>Elige ingredientes y descubre recetas fáciles.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/juego.jpg" alt="Juego en JS">
+        <div class="card-content">
+          <h3>Juego en JavaScript</h3>
+          <p>Un juego divertido para practicar eventos y lógica JS.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+    </div>
   </main>
+
 </body>
 </html>

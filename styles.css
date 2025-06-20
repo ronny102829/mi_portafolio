@@ -69,9 +69,44 @@ nav ul li a {
 }
 
 .card {
-  margin: 2em;
-  padding: 1.5em;
+  background-color: white;
+  color: black;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1; /* Asegura que esté por encima del fondo */
+}
+
+/* Fondo espacial animado */
+body {
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+
+.card, .hero-text {
+  position: relative;
+  z-index: 1;
+}
+.estrella {
+  position: absolute;
+  width: 2px;
+  height: 2px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  animation: caerEstrella linear infinite;
+}
+
+@keyframes caerEstrella {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
